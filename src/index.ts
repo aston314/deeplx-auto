@@ -247,7 +247,8 @@ async function translateWithDeepLX(
         throw new Error(`DeepLX API error: ${response.statusText}`);
       }
 
-      const result = await response.json();
+      // const result = await response.json();
+      const result = await response.json() as { data: string };
       const translation = result.data;
       console.log(`[DeepLX] 翻译成功: ${translation.substring(0, 50)}... (subtitleId: ${subtitleId})`);
       
