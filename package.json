@@ -8,6 +8,7 @@
     "build": "tsc",
     "dev": "ts-node src/index.ts"
   },
+  "type": "module",
   "dependencies": {
     "dotenv": "^10.0.0",
     "franc-min": "^6.1.0",
